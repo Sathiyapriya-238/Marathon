@@ -22,7 +22,7 @@ public class TestCaseSalesForce2 extends SpecificMethod {
     driver.findElement(By.xpath("(//input[@type='text'])[1]")).sendKeys(amount);
 	WebElement text=driver.findElement(By.xpath("//input[@name='Name']"));
 	text.sendKeys(name);
-	driver.findElement(By.xpath("//input[@name='CloseDate']")).sendKeys("2/14/2023");
+	driver.findElement(By.xpath("//input[@name='CloseDate']")).sendKeys("2/24/2023");
 	driver.findElement(By.xpath("(//button[@role='combobox'])[2]")).click();
 	WebElement type=driver.findElement(By.xpath("//span[text()='New Customer']"));
 	driver.executeScript("arguments[0].click();",type);
