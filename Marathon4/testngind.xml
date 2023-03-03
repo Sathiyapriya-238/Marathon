@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Suite" verbose="2">
+<parameter name="url" value="https://login.salesforce.com/"></parameter>
+<parameter name="username" value="hari.radhakrishnan@qeagle.com"></parameter>
+<parameter name="password" value="Leaf@123"></parameter>
+  <test parallel="classes" thread-count="5" name="Test">
+    <classes>
+      <class name="testcase.IndividualTestCase"/> 
+      <class name="testcase.EditIndividual"/> 
+     <class name="testcase.DeleteIndividual"/> 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
